@@ -27,4 +27,9 @@ public class TestStringCalculator {
 	public void twoSingleDigitNumbersReturnsSum() {
 		assertEquals(3, calc.add("1,2"));
 	}
+	
+	@Test
+	public void nAmountOfSingleDigitsReturnsSum() {
+	  assertEquals(6, calc.add("1,2,3"));
+	}
 }
