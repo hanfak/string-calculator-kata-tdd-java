@@ -20,11 +20,16 @@ public class TestStringCalculator {
 	
 	@Test
 	public void addMethodExists() {
-		calc.add(null);
+		calc.add("");
 	}
 	
 	@Test
 	public void emptyStringReturns0() {
 		assertEquals(0, calc.add(""));
+	}
+	
+	@Test 
+	public void singleDigitReturnsDigit() {
+		assertEquals(1, calc.add("1"));
 	}
 }
