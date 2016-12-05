@@ -1,8 +1,16 @@
 package com.hanfak;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class TestStringCalculator {
+	private StringCalculator calc;
+
+	@Before
+	 public void setUp()  {
+		 calc = new StringCalculator();
+	 }
+	
 	@Test
 	public void canCreateObject() {
 		new StringCalculator();
@@ -10,7 +18,6 @@ public class TestStringCalculator {
 	
 	@Test
 	public void addMethodExists() {
-		StringCalculator calc = new StringCalculator();
 		calc.add(null);
 	}
 }
