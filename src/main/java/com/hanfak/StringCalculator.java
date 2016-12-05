@@ -4,18 +4,14 @@ public class StringCalculator {
 	public int add(String input) {
 		String[] numberSet = input.split(",");
 		
-		if (input.length() == 1) {
-			return stringToInt(input);
+		if (input.isEmpty()) {
+			return 0;
 		} 
-		if (input.length() == 3){
-			return 3;
+		int sum = 0;
+		for (String stringNumbers: numberSet) {
+			sum += stringToInt(stringNumbers);
 		}
-		if (input.length() > 3) {
-			return 	stringToInt(numberSet[0]) 
-					+ stringToInt(numberSet[1]) 
-					+ stringToInt(numberSet[2]);
-		}
-		return 0;
+		return sum;
 	}
 	
 	private int stringToInt(String input){
