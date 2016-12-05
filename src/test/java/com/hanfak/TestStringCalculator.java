@@ -32,4 +32,9 @@ public class TestStringCalculator {
 	public void singleDigitReturnsDigit() {
 		assertEquals(1, calc.add("1"));
 	}
+	
+	@Test
+	public void twoSingleDigitNumbersReturnsSum() {
+		assertEquals(3, calc.add("1,2"));
+	}
 }
