@@ -14,16 +14,6 @@ public class TestStringCalculator {
 	 }
 	
 	@Test
-	public void canCreateObject() {
-		new StringCalculator();
-	}
-	
-	@Test
-	public void addMethodExists() {
-		calc.add("");
-	}
-	
-	@Test
 	public void emptyStringReturns0() {
 		assertEquals(0, calc.add(""));
 	}

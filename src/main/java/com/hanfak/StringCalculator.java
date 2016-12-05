@@ -8,7 +8,6 @@ public class StringCalculator {
 		if (numbers.length() > 2){
 			return 3;
 		}
-			
 		return 0;
 	}
 }
