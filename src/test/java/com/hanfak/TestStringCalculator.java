@@ -7,4 +7,10 @@ public class TestStringCalculator {
 	public void canCreateObject() {
 		new StringCalculator();
 	}
+	
+	@Test
+	public void addMethodExists() {
+		StringCalculator calc = new StringCalculator();
+		calc.add(null);
+	}
 }
